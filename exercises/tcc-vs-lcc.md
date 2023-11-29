@@ -22,4 +22,4 @@ public class ExampleClass {
 ```
 Dans cet exemple, il n'y a que deux méthodes dans la classe ExampleClass. Supposons que ces deux méthodes ne partagent aucune donnée ou interaction directe entre elles. Dans ce cas, toutes les paires de méthodes seront considérées comme peu liées, car elles sont indépendantes les unes des autres. Ainsi, le nombre de paires de méthodes peu liées sera égal au nombre total de paires de méthodes, et donc TCC = LCC = 1.
 
-La valeur de LCC peux être plus petit que la valeur de tcc si les méthodes très liées mais aussi des paires de méthodes peu liées. Si le nombre de paires de méthodes très liées est significativement plus élevé que le nombre de paires de méthodes peu liées, le TCC sera plus élevé que le LCC. Cela indique que bien que la plupart des méthodes soient fortement liées, il existe tout de même quelques paires de méthodes peu liées dans la classe, ce qui réduit le LCC par rapport au TCC.
+Le TCC ne peux pas être plus petit que le LCC du fait que LCC inclut toute les méthode de TCC avec en plus les méthodes qui sont lié indirectment.
