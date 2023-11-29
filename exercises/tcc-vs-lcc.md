@@ -2,6 +2,8 @@
 
 Explain under which circumstances *Tight Class Cohesion* (TCC) and *Loose Class Cohesion* (LCC) metrics produce the same value for a given Java class. Build an example of such as class and include the code below or find one example in an open-source project from Github and include the link to the class below. Could LCC be lower than TCC for any given class? Explain.
 
+A refresher on TCC and LCC is available in the [course notes](https://oscarlvp.github.io/vandv-classes/#cohesion-graph).
+
 ## Answer
 Dans certaines circonstances spécifiques, une classe peut avoir les mêmes valeurs de TCC et LCC. Cela se produit lorsque toutes les paires de méthodes dans une classe sont soit très liées, soit peu liées. Dans ce cas, les deux métriques TCC et LCC produiront la même valeur.
 
