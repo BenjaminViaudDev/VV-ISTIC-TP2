@@ -22,4 +22,51 @@ You can find more information on extending PMD in the following link: https://pm
 Use your rule with different projects and describe you findings below. See the [instructions](../sujet.md) for suggestions on the projects to use.
 
 ## Answer
+code tester:
+
+public class NestedIfStatementsRule extends AbstractJavaRule {
+
+   public main(){
+    if(true){
+        if(true){
+            for(int i=0 ;i<10;i++){
+            }
+            if(true){
+            }
+            if(true){
+            }
+        }    
+    }    
+}
+}
+
+
+Utilisez votre règle avec différents projets et décrivez vos résultats ci-dessous
+
+    Règle ajouter:
+
+    XPATH : //IfStatement[descendant::IfStatement[descendant::IfStatement]]
+
+    Résultat obtenu:
+    
+    <rule name="TreeImbrickedIf"
+        language="apex"
+        message="!!! we have 3 imbricked IfStatement"
+        class="net.sourceforge.pmd.lang.rule.XPathRule">
+    <description>
+
+    </description>
+    <priority>3</priority>
+    <properties>
+        <property name="version" value="3.1"/>
+        <property name="xpath">
+            <value>
+    <![CDATA[
+    //IfStatement[descendant::IfStatement[descendant::IfStatement]]
+    ]]>
+            </value>
+        </property>
+    </properties>
+    </rule>
+    
 
