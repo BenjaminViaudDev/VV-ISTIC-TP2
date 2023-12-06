@@ -46,9 +46,6 @@ public class FieldGetterChecker {
             }
             return SourceRoot.Callback.Result.DONT_SAVE;
         });
-
-        // Print or process reportData as needed
-        // For example, printing as CSV format
         System.out.println("Field Name, Declaring Class, Package");
         reportData.forEach(fieldInfo -> System.out.println(String.join(", ", fieldInfo)));
     }
