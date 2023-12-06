@@ -9,4 +9,4 @@ Include in this repository the code of your application. Remove all unnecessary 
 You may use [javaparser-starter](../code/javaparser-starter) as a starting point.
 
 ## Answer
-Lien vers l'implémentation : [FieldGetterChecker](../code/javaparser-starter/src/main/java/fr/istic/vv/CyclomaticComplexityAnalyzer.java)
+Lien vers l'implémentation : [CyclomaticComplexityAnalyzer](../code/javaparser-starter/src/main/java/fr/istic/vv/CyclomaticComplexityAnalyzer.java)
